@@ -82,7 +82,7 @@ public class ConditionPractice {
     	
     public void practice3() {
         
-    }
+    
 
     /*
         국어, 영어, 수학 세 과목의 점수를 키보드로 입력 받고 합계와 평균을 계산하고
@@ -106,6 +106,18 @@ public class ConditionPractice {
         평균 : 61.0
         축하합니다, 합격입니다!
      */
+    	
+    	System.out.print("국어점수 : ");
+    	int score1 = sc.nextInt();
+    	
+    	System.out.print("수학점수 : ");
+    	int score2 = sc.nextInt();
+    	
+    	System.out.print("영어점수 : ");
+    	int score3 = sc.nextInt();
+    	
+    	
+}
     public void practice4() {
   
     }
@@ -255,8 +267,8 @@ public class ConditionPractice {
 		ConditionPractice c = new ConditionPractice();
 //		c.practice();
 //		c.practice1();
-		c.practice2();
-//		c.practice3();
+//		c.practice2(); x
+		c.practice3();
 //		c.practice4();
 		
 	}
