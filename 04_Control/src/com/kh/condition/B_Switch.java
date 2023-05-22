@@ -113,9 +113,9 @@ public class B_Switch {
 	
 	public static void main(String[] args) {
 		B_Switch b = new B_Switch();
-//		b.method1();
+		b.method1();
 //		b.practice1();
-		b.practice2();
+//		b.practice2();
 	}
 
 }

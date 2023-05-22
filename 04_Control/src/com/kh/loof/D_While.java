@@ -97,12 +97,89 @@ public class D_While {
 	 * 3번 만에 맞췄습니다.
 	 */
 	public void method5() {
-		double ans = Math.random(); 
-		int num2 = 0;
+		int answer = (int)(Math.random() * 100) + 1; 
+		int input = 0;
+		int count = 0;
 		
+		while(true) {
+			count++;
 			System.out.print("1과 100사이의 값 입력 > ");
-			num2 = sc.nextInt();
+			input = sc.nextInt();
+			
+			if(answer > input){
+				System.out.println("더 큰수를 입력하세요.");
+			} else if (answer < input){
+				System.out.println("더 작은 수를 입력하세요.");
+			} else {
+				System.out.println(count+"번 만에 맞췄습니다.");
+			}
 		}
+	}
+		public void method6() {
+			
+			int balance = 0;
+			boolean run = true;
+			
+			while(run) {
+				System.out.println("-----------------------------------");
+				System.out.println("1. 예금 | 2. 출금 | 3. 잔고 | 4. 종료 ");
+				System.out.println("-----------------------------------");
+			
+				System.out.print("선택 > ");
+			// Integer.parseInt : Integer 클래스의 parseInt 메소드
+			// String -> int
+			int menu = Integer.parseInt(sc.nextLine());
+		
+			switch (menu) {
+			case 1: 
+				System.out.print("예금액 > ");
+				balance +=Integer.parseInt(sc.nextLine());
+				break;
+			case 2: 
+				System.out.print("출금액 > ");
+				balance -=Integer.parseInt(sc.nextLine());
+				break;
+			case 3: 
+				System.out.print("잔고 > "); 
+				System.out.println(balance + "원 ");
+				break;
+			case 4:
+				run = false;
+				break;
+			} 
+		
+			System.out.println("종료되었습니다");
+			}
+		}
+
+			
+			/*
+			 * ---------------------------------
+			 * 1. 예금 | 2. 출금 | 3. 잔고 | 4.종료
+			 * ---------------------------------
+			 * 선택 >1
+			 * 예금액 > 5000
+			 * 
+			 * ---------------------------------
+			 * 1. 예금 | 2. 출금 | 3. 잔고 | 4.종료
+			 * ---------------------------------
+			 * 선택 > 2 
+			 * 출금액 > 2000 
+			 * 
+			 * ---------------------------------
+			 * 1. 예금 | 2. 출금 | 3. 잔고 | 4.종료
+			 * ---------------------------------
+			 * 선택 > 3
+			 * 잔고 > 3000
+			 * 
+			  * ---------------------------------
+			 * 1. 예금 | 2. 출금 | 3. 잔고 | 4.종료
+			 * ---------------------------------
+			 * 선택 > 4 
+			 * 종료되었습니다.
+			 */
+		
+					
 	
 
 	public static void main(String[] args) {
@@ -111,7 +188,9 @@ public class D_While {
 //		d.method2();
 //		d.method3();
 //		d.method4();
-		d.method5();
+//		d.method5();
+		d.method6();
+		
 		
 	}
 
