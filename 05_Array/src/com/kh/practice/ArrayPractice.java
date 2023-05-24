@@ -106,7 +106,7 @@ public class ArrayPractice {
 		
 		System.out.print("단어입력: " );
 		String word = sc.nextLine();
-		charAt(0) =
+		
 		
 		
 		
