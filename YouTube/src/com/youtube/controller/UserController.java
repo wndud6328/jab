@@ -1,8 +1,13 @@
 package com.youtube.controller;
 
-public class UserController {
+import com.youtube.model.User;
 
+public class UserController {
+	
+	private User u = new User();
+	
 	public boolean login() {// 로그인
+
 		return false;
 	}
 	
