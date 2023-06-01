@@ -2,7 +2,7 @@ package com.youtube.controller;
 
 import com.youtube.model.User;
 
-public class UserController {
+public class UserController implements UserControllerImpl{
 	
 	private User u = new User();
 	

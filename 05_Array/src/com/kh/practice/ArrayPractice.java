@@ -16,7 +16,7 @@ public class ArrayPractice {
 	 * 
 	 * */
 	public void method1() {
-		String [][] arr = new String [][]{"사과","포도","귤","배","키위"};
+		String [] arr = new String []{"사과","포도","귤","배", "키위"};
 
 	for(int i = 0; i<arr.length; i++) {
 		System.out.println(Arrays.toString(arr));
@@ -90,27 +90,41 @@ public class ArrayPractice {
 	 * 
 	 * */
 	public void method4() {
-	
-		
+		String user = "";
+		System.out.println("주민등록번호를 입력해주세요");
+		user = sc.nextLine();
+		System.out.println();
+		for (int i = 0; i < user.length(); i++) {
+			if (i > 7) {
+				System.out.print("*");
+			} else {
+				System.out.print(user.charAt(i));
+
+			}
+		}
+
 	}
-	
 	/*
-	 * 사용자가 입력한 단어를 거꾸로 뒤집어서 출력하세요. 
+	 * 사용자가 입력한 단어를 거꾸로 뒤집어서 출력하세요.
 	 * 
-	 * 단어 입력 : programming
-	 * gnimmargorp
+	 * 단어 입력 : programming gnimmargorp
 	 * 
-	 * */
+	 */
 	public void method5() {
-		
-		
-		System.out.print("단어입력: " );
-		String word = sc.nextLine();
-		
-		
-		
-		
+		String user = "";
+		char[] usercha = null;
+		System.out.println("단어를 입력해주세요");
+		user = sc.nextLine();
+		usercha = new char[user.length()];
+		for (int i = 0; i < user.length(); i++) {
+			usercha[i] = user.charAt(i);
+		}
+		for (int i = usercha.length - 1; i >= 0; i--) {
+			System.out.print(usercha[i]);
+		}
 	}
+
+
 
 public static void main(String[] args) {
 	

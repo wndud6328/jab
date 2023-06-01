@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.kh.polymorphism.model.child.Engineer"/>
+    <fullyQualifiedTypeName name="com.kh.practice.model.Member"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.kh.practice.controller.LibraryController"/>
+    <fullyQualifiedTypeName name="com.kh.practice.model.AniBook"/>
+    <fullyQualifiedTypeName name="com.kh.practice.model.CookBook"/>
+    <fullyQualifiedTypeName name="com.kh.practice.model.Book"/>
+</qualifiedTypeNameHistroy>
