@@ -2,29 +2,39 @@ package com.youtube.controller;
 
 import com.youtube.model.User;
 
-public class UserController {
+public class UserController{
 	
-	private User u = new User();
+	User user = null;
 	
-	public boolean login() {// 로그인
-
+	public boolean login(String id, String password) {// 로그인
+		if(user!=null && user.getId().equals(id) 
+				&& user.getPassword().equals(password))
+			return false;
 		return false;
 	}
 	
-	public boolean signUp() { // 회원가입
-		return false;
+	public void signUp(User user) { // 회원가입
+		this.user = user;
+		return ;
 	}
 
-	public UserController viewProfile() { // 프로필 보기
+	public User viewProfile() { // 프로필 보기
+		if(login(user.getId(), user.getPassword())) {
+			return user;
+		}
 		return null;
 	}
 	
-	public UserController updateProfile() { // 프로필 수정
-		return null;
+	public User updateProfile(User user) { // 프로필 수정
+		if(login(user.getId(), user.getPassword())) {
+			this.user = user;
+		}
+		return user;
 	}
 	
-	public boolean deleteProfile() { // 계정 삭제
-		return false;
+	public void deleteProfile(String id) { // 계정 삭제
+		if(user.getId().equals(id)) {
+			user = null;
+		}
 	}
 }
-

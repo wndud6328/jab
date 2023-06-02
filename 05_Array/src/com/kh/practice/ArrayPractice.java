@@ -16,7 +16,7 @@ public class ArrayPractice {
 	 * 
 	 * */
 	public void method1() {
-		String [][] arr = new String [][]{"사과","포도","귤","배","키위"};
+		String [] arr = new String []{"사과","포도","귤","배","키위"};
 
 	for(int i = 0; i<arr.length; i++) {
 		System.out.println(Arrays.toString(arr));
@@ -115,11 +115,11 @@ public class ArrayPractice {
 public static void main(String[] args) {
 	
 	ArrayPractice a = new ArrayPractice();
-//	a.method1();
+	a.method1();
 //	a.method2();
 //	a.method3();
 //	a.method4();
-	a.method5();
+//	a.method5();
 	
 }
 }
