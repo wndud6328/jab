@@ -19,13 +19,13 @@ public class VideoController {
 	
 	public boolean saveData(VideoController v) {
 		
-		this.v.setTitle(v.getTitle());
-		this.v.setcomment(v.getcommet());
-		this.v.setUploadAt(v.getUploadAt());
-		this.v.setCount(v.getCount());
-		this.v.setimgUrl(v.getImgUrl());
-		this.v.setFileUrl(v.getFileurl());
-	
+//		this.v.setTitle(v.getTitle());
+//		this.v.setcomment(v.getcommet());
+//		this.v.setUploadAt(v.getUploadAt());
+//		this.v.setCount(v.getCount());
+//		this.v.setimgUrl(v.getImgUrl());
+//		this.v.setFileUrl(v.getFileurl());
+//	
 		return true;
 	}
 
